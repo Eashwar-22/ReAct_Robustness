@@ -1,0 +1,9 @@
+dataset_name,task,noise_type,result,final_answer,error_type,failure_mode,run_duration,final_code
+iris,Calculate the mean of `sepalLength` and `sepalWidth`.,clean,Failure,No Final Answer,,Planning Failure,2.678691,No Code
+iris,List the unique `species` present in the dataset.,clean,Failure,No Final Answer,,Planning Failure,3.247004,print(df['species'].unique())
+iris,What is the correlation between `petalLength` and `petalWidth`?,clean,Failure,No Final Answer,,Planning Failure,6.777386,import pandas as pd; print(df['petalLength'].corr(df['petalWidth']))
+iris,Find the average of the column that contains the length of the sepals.,clean,Failure,No Final Answer,,Planning Failure,2.872082,No Code
+iris,Calculate the mean of `sepalLength` and `sepalWidth`.,shuffled_headers,Failure,No Final Answer,,Planning Failure,10.463848,No Code
+iris,List the unique `species` present in the dataset.,shuffled_headers,Failure,No Final Answer,,Planning Failure,2.54229,No Code
+iris,What is the correlation between `petalLength` and `petalWidth`?,shuffled_headers,Failure,No Final Answer,,Planning Failure,3.6904,No Code
+iris,Find the average of the column that contains the length of the sepals.,shuffled_headers,Failure,No Final Answer,,Planning Failure,9.001678,import pandas as pd\n# Load the noisy iris dataset with shuffled headers\ndf = pd.read_json('data/iris.json')\n# Calculate and print the average of the 'sepal_length(cen)' column\nprint(df['sepal_length(cen)'].mean())

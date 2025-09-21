@@ -1,0 +1,25 @@
+dataset_name,task,noise_type,result
+iris,Calculate the mean of `sepalLength` and `sepalWidth`.,clean,Success
+iris,List the unique `species` present in the dataset.,clean,Success
+iris,What is the correlation between `petalLength` and `petalWidth`?,clean,Success
+iris,Find the average of the column that contains the length of the sepals.,clean,Failure
+iris,Calculate the mean of `sepalLength` and `sepalWidth`.,shuffled_headers,Success
+iris,List the unique `species` present in the dataset.,shuffled_headers,Success
+iris,What is the correlation between `petalLength` and `petalWidth`?,shuffled_headers,Success
+iris,Find the average of the column that contains the length of the sepals.,shuffled_headers,Failure
+iris,Calculate the mean of `sepalLength` and `sepalWidth`.,misspelled_headers,Success
+iris,List the unique `species` present in the dataset.,misspelled_headers,Success
+iris,What is the correlation between `petalLength` and `petalWidth`?,misspelled_headers,Failure
+iris,Find the average of the column that contains the length of the sepals.,misspelled_headers,Success
+iris,Calculate the mean of `sepalLength` and `sepalWidth`.,typos_in_content,Success
+iris,List the unique `species` present in the dataset.,typos_in_content,Success
+iris,What is the correlation between `petalLength` and `petalWidth`?,typos_in_content,Success
+iris,Find the average of the column that contains the length of the sepals.,typos_in_content,Failure
+iris,Calculate the mean of `sepalLength` and `sepalWidth`.,mixed_data_types,Failure
+iris,List the unique `species` present in the dataset.,mixed_data_types,Success
+iris,What is the correlation between `petalLength` and `petalWidth`?,mixed_data_types,Failure
+iris,Find the average of the column that contains the length of the sepals.,mixed_data_types,Success
+iris,Calculate the mean of `sepalLength` and `sepalWidth`.,missing_values,Success
+iris,List the unique `species` present in the dataset.,missing_values,Success
+iris,What is the correlation between `petalLength` and `petalWidth`?,missing_values,Failure
+iris,Find the average of the column that contains the length of the sepals.,missing_values,Failure
