@@ -1,7 +1,20 @@
-# test notebooks for personal use
+# test notebooks
 junk.ipynb
 agent.ipynb
 
 # test outputs
 data/TEST_noisy_iris_shuffled_headers.json
+
+# test .py files
+agent1.py
+agent2.py
+agent_old.py
+junk.py
+
+# misc
+outputs/agent.png
+outputs/IRIS_only.txt
+outputs/supervisor-diagram.png
+
+
 
