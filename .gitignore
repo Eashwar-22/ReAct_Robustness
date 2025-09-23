@@ -1,6 +1,7 @@
 # test notebooks
 junk.ipynb
 agent.ipynb
+docs.ipynb
 
 # test outputs
 data/TEST_noisy_iris_shuffled_headers.json
