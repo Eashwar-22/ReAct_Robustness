@@ -10,6 +10,7 @@ data/TEST_noisy_iris_shuffled_headers.json
 agent1.py
 agent2.py
 agent_old.py
+data_handler_old.py
 junk.py
 
 # misc

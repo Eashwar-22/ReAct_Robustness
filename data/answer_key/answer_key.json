@@ -19,31 +19,8 @@
     {
       "question": "Calculate the standard deviation of the sepal width.",
       "answer": 0.44
-    },
-    {
-      "question": "What is the correlation between sepal length and sepal width?",
-      "answer": -0.12
-    },
-    {
-      "question": "What is the maximum petal length for the 'setosa' species?",
-      "answer": 1.9
-    },
-    {
-      "question": "How many flowers of each species are recorded in the dataset?",
-      "answer": {
-        "setosa": 50,
-        "versicolor": 50,
-        "virginica": 50
-      }
-    },
-    {
-      "question": "What is the minimum sepal length observed?",
-      "answer": 4.3
-    },
-    {
-      "question": "Calculate the average petal length for the 'virginica' species.",
-      "answer": 5.55
     }
+    
   ],
   "electric_vehicles": [
     {
@@ -65,26 +42,6 @@
     {
       "question": "How many vehicles were manufactured in the USA?",
       "answer": 36
-    },
-    {
-      "question": "What is the average range for vehicles with a perfect safety rating of 5?",
-      "answer": 298.81
-    },
-    {
-      "question": "Which is the most common battery type used in these vehicles?",
-      "answer": "Lithium-ion"
-    },
-    {
-      "question": "What is the total number of units sold in 2024 across all models?",
-      "answer": 30542880
-    },
-    {
-      "question": "Calculate the standard deviation of the battery capacity (kWh).",
-      "answer": 40.58
-    },
-    {
-      "question": "What is the price of the most expensive vehicle in the dataset?",
-      "answer": 149988.11
     }
   ]
 }

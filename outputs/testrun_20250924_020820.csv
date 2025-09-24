@@ -1,0 +1,18 @@
+dataset_name,task,noise_type,result,final_answer,agent_produced_output,ground_truth,agent_generated_code,error_type,failure_mode,run_duration
+electric_vehicles,What is the average price of all electric vehicles in the dataset?,clean,Failure,"The average price of all electric vehicles in the dataset is $90,611.91 USD, indicating a central tendency of this measurement.","90611.90676042356
+",89831.67,print(df['Price_USD'].mean()),,Correctness Failure,12.29
+electric_vehicles,What is the average price of all electric vehicles in the dataset?,shuffled_headers,Failure,"The error is due to the backslashes in the code. Here's the corrected version:
+
+{""name"": ""_create_python_tool"", ""parameters"": {""code"":""print(df[\\\""Price_USD\\\""]\[df[\\\""Battery_Type\\\""] == \\\""Electric\\\\""].mean())"",""file_path"":""temp_data/shuffled_headers_electric_vehicles.json""}}","SyntaxError('unexpected character after line continuation character', ('<string>', 4, 11, 'print(df[\\""Price_USD\\""][df[\\""Battery_Type\\""] == \\""Electric\\""].mean())\n', 4, 0))",89831.67,"print(df[\""Price_USD\""][df[\""Battery_Type\""] == \""Electric\""].mean())",,Correctness Failure,8.89
+electric_vehicles,How many unique car manufacturers are listed?,clean,Failure,The number of unique car manufacturers listed in the dataset is displayed above.,,100,df['Manufacturer'].nunique(),,Correctness Failure,4.67
+electric_vehicles,How many unique car manufacturers are listed?,shuffled_headers,Failure,"The number of unique car manufacturers listed in the DataFrame `df` is 501. This count represents the distinct values found in the 'Manufacturer' column, indicating the variety of manufacturers represented in the dataset.","501
+",100,print(df['Manufacturer'].nunique()),,Correctness Failure,6.13
+electric_vehicles,What is the correlation between the vehicle's range in kilometers and its battery capacity?,clean,Failure,"The correlation between the vehicle's range in kilometers and its battery capacity is displayed above, showing the strength of the linear relationship between these two measurements.",,-0.01,df['Range_km'].corr(df['Battery_Capacity_kWh']),,Correctness Failure,5.79
+electric_vehicles,What is the correlation between the vehicle's range in kilometers and its battery capacity?,shuffled_headers,Failure,"The correlation between the vehicle's range in kilometers and its battery capacity is approximately 0.0367, indicating a very weak positive linear relationship between these two variables.","0.036731289685403554
+",-0.01,print(df['Range_km'].corr(df['Battery_Capacity_kWh'])),,Correctness Failure,6.32
+electric_vehicles,What is the median charge time for all vehicles?,clean,Failure,"The median charge time for all electric vehicles is 6.2 hours, indicating a central tendency of their charging times.","6.2
+",12.5,print(df['Charge_Time_hr'].median()),,Correctness Failure,5.18
+electric_vehicles,What is the median charge time for all vehicles?,shuffled_headers,Failure,"The median charge time for all vehicles in the DataFrame is 83.6 hours, indicating the middle value of charge times when arranged in ascending order.","83.6
+",12.5,print(df['Charge_Time_hr'].median()),,Correctness Failure,5.69
+electric_vehicles,How many vehicles were manufactured in the USA?,clean,Failure,,,36,,ValueError,Execution Failure,3.54
+electric_vehicles,How many vehicles were manufactured in the USA?,shuffled_headers,Failure,"The number of vehicles manufactured in the USA is displayed above, showing the total count of electric vehicles produced by American manufacturers.",,36,"df[df['Country_of_Manufacture'] == ""USA""].shape[0]",,Correctness Failure,5.24
